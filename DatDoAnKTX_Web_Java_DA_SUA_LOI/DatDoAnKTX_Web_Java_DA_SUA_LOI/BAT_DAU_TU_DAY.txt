@@ -1,0 +1,21 @@
+HUONG DAN CHAY DON GIAN NHAT - WINDOWS
+
+1. GIAI NEN ZIP (chuot phai > Extract All).
+2. Mo thu muc DatDoAnKTX_Web_Java_DA_SUA_LOI (trong do co src va web).
+3. NHAP DUP vao MO_WEBSITE.bat.
+4. Website tu mo trong Chrome/Edge (neu khong tu mo, xem duong dan duoc in trong cua so den).
+   Mac dinh http://localhost:9090 ; neu trung cong, tu chuyen 9091, 9092...
+5. Giu cua so den dang mo khi su dung website.
+
+CHAY BANG INTELLIJ IDEA
+1. File > Open > chon CHINH XAC thu muc DatDoAnKTX_Web_Java_DA_SUA_LOI.
+2. Mo src/main/Main.java > bam tam giac xanh Run.
+3. Website co the tu mo. Neu khong tu mo, xem duong dan o khung Run.
+4. KHONG can chinh Working directory, khong can sua duong dan cua WebServer.
+
+LUU Y
+- Khong mo HTML bang Live Server vi chuc nang dat hang can Java dang chay.
+- Can JDK 17+; may ban dang co JDK 21.
+- Khi website dang chay, khong bam Run lan nua (neu bam, no se chuyen sang cong khac).
+- Vi/tai khoan la du lieu mau; khong co thanh toan ngan hang that.
+- Anh mon an online co the can Internet de hien thi.
