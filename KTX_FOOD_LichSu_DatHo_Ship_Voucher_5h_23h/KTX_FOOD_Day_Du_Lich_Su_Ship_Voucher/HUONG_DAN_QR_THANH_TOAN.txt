@@ -1,0 +1,43 @@
+KTX FOOD - HUONG DAN MA QR THANH TOAN
+
+1. CHAY NHU CU:
+   - Giai nen ZIP.
+   - Mo thu muc DatDoAnKTX_Web_Java_QR_ThanhToan.
+   - Nhap dup MO_WEBSITE.bat.
+   - Truy cap dia chi hien trong cua so den (thuong la http://localhost:9090).
+   - Dang nhap SV001 / 123456 (tai khoan demo).
+
+2. QR DAT HANG:
+   - Them mon vao gio, chon 'Chuyen khoan', bam 'Dat hang'.
+   - Ma QR DEMO hien ra cung so tien va ma don hang.
+   - Quet de xem noi dung mo phong. QR demo KHONG CHUYEN TIEN THAT.
+   - Trang thai van cho xac nhan, khong tu danh dau da thanh toan.
+
+3. QR NAP VI (DEMO):
+   - Bam 'Nap vi' -> nhap 50000 -> 'Tao yeu cau nap vi'.
+   - QR demo hien ra voi so tien va ma yeu cau.
+   - Bam 'Mo phong ngan hang xac nhan da chuyen' de cong tien GIA LAP.
+
+4. (TUY CHON) HIEN VIETQR CHUYEN TIEN THAT CHO DON HANG:
+   - Chi cau hinh khi duoc chu tai khoan cho phep va duoc giang vien dong y.
+   - Mo web/payment-config.js -> sua mode: 'real'.
+   - Nhap bankId (ma BIN / ngan hang), accountNo (so tai khoan nhan), accountName.
+   - Tai lai trang; QR don hang se tu tao qua VietQR Quick Link, can Internet.
+   - KHONG dien mat khau/OTP vao project.
+   - He thong CHUA CO doi soat ngan hang. Khach chuyen tien that thi
+     don hang VAN O TRANG THAI CHO XAC NHAN, khong tu dong thanh cong.
+   - QR NAP VI van la gia lap, KHONG nhan tien that.
+
+5. FILE QUAN TRONG:
+   - web/index.html: giao dien
+   - web/style.css: mau sac, bo cuc
+   - web/app.js: hien QR theo ma don, ma nap vi
+   - web/qr.js: thu vien tao QR demo, hoat dong offline
+   - web/payment-config.js: tuy chon cau hinh VietQR don hang
+   - src/main/WebServer.java: tra cac file JS cho trinh duyet
+   - src/service/OrderService.java: xu ly dat hang, giu trang thai cho xac nhan
+
+6. LUU Y: QUET QR KHONG DONG NGHIA THANH TOAN DA THANH CONG.
+   Muon tu dong xac nhan thanh toan thuc: tich hop cong thanh toan, webhook
+   da xac thuc, doi soat dung ma don / so tien / giao dich duy nhat.
+

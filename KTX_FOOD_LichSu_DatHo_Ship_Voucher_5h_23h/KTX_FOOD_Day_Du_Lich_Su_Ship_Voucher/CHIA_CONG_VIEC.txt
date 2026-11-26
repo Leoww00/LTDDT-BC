@@ -1,0 +1,10 @@
+GOI Y CHIA CONG VIEC 4 THANH VIEN
+1. Thanh vien 1: main/Main + main/WebServer + html + tich hop/test
+2. Thanh vien 2: model/User, Student, Food + service/FoodService
+3. Thanh vien 3: model/Cart, CartItem, Order, OrderDetail + kiem thu gio hang
+4. Thanh vien 4: service/PaymentMethod, WalletPayment, CashPayment, BankTransferPayment, OrderService + repository + utils
+
+THUYET TRINH:
+- Phan giao dien: HTML, CSS, JS (luu y logic OOP o Java)
+- Sơ do class: Student --> User, PaymentMethod --> cac thanh toan; Cart chua CartItem; Order chua OrderDetail
+- Noi tai sao dung interface PaymentMethod va tach CartItem khoi Food.

@@ -1,0 +1,11 @@
+ANH MINH HOA ONLINE (KHONG PHAI ANH MON DO NHOM TU CHUP)
+Anh tu Wikimedia Commons, su dung qua Special:FilePath.
+Tham khao ten tac gia va dieu khoan tai tung trang:
+- Com ga: https://commons.wikimedia.org/wiki/File:Bogus_Chicken_rice.jpg
+- Bun bo: https://commons.wikimedia.org/wiki/File:BunboHue.jpg
+- Banh mi: https://commons.wikimedia.org/wiki/File:Banh_mi_sandwich.jpg
+- Tra sua: https://commons.wikimedia.org/wiki/File:Bubble_Tea.jpg
+- Pho bo: https://commons.wikimedia.org/wiki/File:Ph%E1%BB%9F_b%C3%B2.JPG
+Moi file anh co giay phep rieng; neu su dung khi dang cong khai, ghi nguon
+va tuan thu dieu kien giay phep cu the (co the yeu cau ghi tac gia va chia se tuong tu).
+Neu muon thay bang anh chinh minh chup, sua bien productInfo trong web/app.js.

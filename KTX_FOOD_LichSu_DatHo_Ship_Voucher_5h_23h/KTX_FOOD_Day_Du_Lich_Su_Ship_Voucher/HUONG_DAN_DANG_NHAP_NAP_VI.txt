@@ -1,0 +1,28 @@
+CAN TIN KTX - JAVA OOP WEB - DANG NHAP + NAP VI GIA LAP
+======================================================
+1. Giai nen file ZIP. Mo thu muc DatDoAnKTX_Web_Java_DangNhap_NapVi.
+2. Nhan dup MO_WEBSITE.bat (Windows). Can cai JDK 17 tro len.
+3. Neu mo bang IntelliJ: mo dung thu muc nay; chay src/main/Main.java.
+4. Trinh duyet: http://localhost:9090 (neu 9090 ban se tu thu cong khac).
+5. Tai khoan de demo:
+      SV001 / 123456 (200.000d ban dau)
+      SV002 / 123456 (80.000d ban dau)
+6. Sau khi dang nhap, bam '+ Nap vi' -> nhap so tien -> Tao yeu cau
+   -> bam 'Mo phong ngan hang xac nhan da chuyen'.
+   LUC NAY Java moi cong tien vao vi. Day KHONG phai chuyen khoan that.
+7. So du va lich su nap vi luu o data/student_wallets.tsv (khong xoa
+   neu muon giu so du), mat khau luu bang ma bam PBKDF2 va muoi rieng.
+8. Muon reset du lieu ve ban dau: tat website, xoa file data/student_wallets.tsv,
+   chay lai. Bai nay chi la demo tren localhost.
+9. Dat mon: chon mon -> them vao gio -> thanh toan vi hoac tien mat
+   hoac chuyen khoan (hai hinh thuc sau la mo phong cho thanh toan).
+10. Da co Java OOP: Dong goi, ke thua, da hinh, truu tuong, interface,
+    ArrayList, Map, try-catch, File IO; 5 package: model, service,
+    repository, utils, main.
+
+LUU Y AN TOAN:
+- KHONG su dung mat khau ngan hang, OTP, thong tin the that tren demo.
+- Khong duoc cong tien vao vi that dua vao nut 'Da chuyen tien'.
+- Neu muon nap tien that, can dang ky nha cung cap thanh toan co API,
+  xac minh thong bao thanh toan tu server va chong lap giao dich.
+- Ban demo chi chay local, chua co hoan thien bao mat de trien khai cong khai.

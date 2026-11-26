@@ -1,0 +1,29 @@
+KTX FOOD - PHIEN BAN MO RONG (JAVA OOP + WEB)
+=============================================
+
+1. Giai nen file ZIP.
+2. Mo thu muc KTX_FOOD_Day_Du_Lich_Su_Ship_Voucher.
+3. NHAP DUP VAO FILE MO_WEBSITE.bat.
+4. Giu nguyen cua so lenh dang mo.
+5. Website tu mo; neu khong, mo Chrome tai http://localhost:9090
+   (Neu cong 9090 dang ban, xem dia chi port moi hien trong cua so lenh.)
+
+TAI KHOAN THU:
+ SV001 / 123456
+ SV002 / 123456
+
+DU LIEU DEMO, KHONG NAP/CHUYEN TIEN THAT.
+
+GIO DAT HANG: 05:00 - truoc 23:00, gio Viet Nam.
+
+TINH NANG MOI:
+ - Lich su mua hang: luu ca mon, nguoi nhan, dia diem, phi ship, voucher.
+ - Lich su thanh toan: phan biet thanh toan vi va cac phuong thuc cho xac nhan.
+ - Lich su nap vi: luu yeu cau nap, ngay gio, trang thai.
+ - Dat ho: nhap ten va so dien thoai nguoi nhan.
+ - Ship: giao trong khuon vien KTX, phi demo 8.000d / don.
+ - Voucher: KTX10, FREESHIP (quy tac ghi trong giao dien).
+ - Gio gioi han tao don 05:00-23:00 duoc kiem tra trong Java.
+
+CHUY Y: Ship, voucher va xac nhan ngan hang chi la mo phong de tai.
+Khong co shipper that hoac API doi soat ngan hang that.
