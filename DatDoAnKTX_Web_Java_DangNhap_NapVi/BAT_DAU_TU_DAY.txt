@@ -1,0 +1,18 @@
+HUONG DAN MO WEB KTX FOOD - PHIEN BAN DANG NHAP + NAP VI
+======================================================
+1. Giai nen file DatDoAnKTX_Web_Java_DangNhap_NapVi.zip.
+2. Vao DUNG THU MUC DatDoAnKTX_Web_Java_DangNhap_NapVi (co src, web, MO_WEBSITE.bat).
+3. Double click file MO_WEBSITE.bat. Yeu cau may co JDK 17 tro len.
+4. Neu khong tu mo, copy dia chi http://localhost:9090 vao Chrome.
+   Neu cong 9090 bi chiem, nhin dia chi in tren cua so chuong trinh.
+5. Dang nhap SV001 / 123456 hoac SV002 / 123456.
+6. Bam + Nap vi -> chon so tien -> Tao yeu cau -> Mo phong ngan hang xac nhan.
+7. Them mon vao gio -> chon thanh toan vi -> Dat hang.
+
+DAY LA MO PHONG, KHONG CO TIEN THAT HOAC CHUYEN KHOAN THAT.
+
+Mo trong IntelliJ: File > Open > chon thu muc nay > Run Main.java.
+Neu mo tu thu muc cha, code van tu tim thu muc co src + web.
+Khong can sua Working directory.
+
+Chi tiet doc HUONG_DAN_DANG_NHAP_NAP_VI.txt.

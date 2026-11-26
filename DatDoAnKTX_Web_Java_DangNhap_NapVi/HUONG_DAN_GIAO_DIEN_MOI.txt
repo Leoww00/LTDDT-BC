@@ -1,0 +1,25 @@
+GIAO DIEN WEB MOI - CAN TIN KTX
+
+DAY LA BAN THAY DOI GIAO DIEN, GIU NGUYEN CHUC NANG JAVA.
+
+CACH DE NHAT - DANG DUNG PROJECT TREN INTELLIJ:
+1. Giai nen file KTX_FOOD_Giao_Dien_Moi_3_File.zip.
+2. Mo thu muc 'web' ben trong file giai nen.
+3. Sao chep 3 file index.html, style.css, app.js.
+4. Dan de vao thu muc 'web' cua project da mo tren IntelliJ.
+5. Chon Replace/Overwrite khi duoc hoi.
+6. Quay lai trinh duyet tai http://localhost:9090 va nhan Ctrl + F5.
+Neu Java chua chay, Run main.Main trong IntelliJ. Working directory phai la thu muc chua src va web.
+
+3 FILE GIAO DIEN:
+- web/index.html: bo cuc va chu tren trang
+- web/style.css: mau sac, font chu, khoang cach, giao dien dien thoai
+- web/app.js: hien thi mon, tim kiem, gio hang, nut dat hang; gui len Java backend
+
+LUU Y:
+- Neu dang chay o cong 8080, mo http://localhost:8080 thay cho 9090.
+- Anh mon an lay tu Wikimedia Commons tren Internet. Neu khong co mang,
+  trang se tu dong chuyen sang hien thi mon bang chu de khong bi hong giao dien.
+- Gia va trang thai mon an, tinh tien, thanh toan do Java xu ly.
+- Khong phai website thuong mai that; vi, tien mat, chuyen khoan la mo phong.
+- Muon sua ten mon, gia mon, tinh trang con/hết hang: xem src/service/FoodService.java.

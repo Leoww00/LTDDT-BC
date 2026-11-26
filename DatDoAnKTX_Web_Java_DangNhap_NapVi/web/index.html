@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#244034">
+  <title>KTX FOOD | Đặt món cho sinh viên</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <section id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="login-brand"><span class="brand-icon">🍽️</span><div><strong>KTX FOOD</strong><small> Hệ Thống Đặt Món Cho Sinh Viên KTX </small></div></div>
+      <h1>Đăng nhập sinh viên</h1>
+      <p class="login-intro">Sử dụng mã sinh viên và mật khẩu để đặt món, quản lý ví của bạn.</p>
+      <form id="loginForm">
+        <label for="loginId">Tên đăng nhập</label>
+        <input type="text" id="loginId"
+               placeholder="Nhập họ và tên"
+               required>
+
+        <label for="loginPassword">Mật khẩu</label>
+        <input type="password" id="loginPassword" name="password" autocomplete="current-password" placeholder="Nhập mật khẩu" required>
+        <p id="loginError" class="login-error" role="alert"></p>
+        <button type="submit" class="login-submit">Đăng nhập</button>
+      </form>
+      <div class="demo-accounts"><strong>Tài khoản mẫu để thử</strong>
+        <p><code>Nguyenvana</code> / <code>123456</code>
+        <small>Nhóm 3 - Hệ Thống Đặt Đồ Ăn Cho Sinh Viên KTX</small>
+      </div>
+    </div>
+  </section>
+  <div id="appShell" hidden>
+  <div class="demo-bar">Nhóm 3 - Hệ Thống Đặt Đồ Ăn Cho Sinh Viên KTX</div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-icon">KT</span>
+        <span class="brand-name">KTX <strong>FOOD</strong><small>Đặt món cho sinh viên</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Điều hướng chính">
+        <a href="#thuc-don">Thực đơn</a>
+        <a href="#huong-dan">Hướng dẫn</a>
+        <button type="button" id="historyBtn" class="nav-text-btn">Đơn hàng</button>
+        <button type="button" id="walletBtn" class="nav-text-btn">Nạp ví</button>
+        <button type="button" id="logoutBtn" class="nav-text-btn logout-btn">Đăng xuất</button>
+      </nav>
+      <button class="mobile-cart-button" type="button" id="mobileCartBtn" aria-label="Mở giỏ hàng">
+        Giỏ hàng <span id="mobileCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow">THỰC ĐƠN CĂN TIN · ĐẶT MÓN NỘI BỘ</p>
+        <h1 id="intro-title">Chọn món cho bữa hôm nay</h1>
+        <p>Không cần nhắn tin từng món. Xem thực đơn, cho món vào giỏ và đặt ngay trên một trang.</p>
+        <a class="intro-link" href="#thuc-don">Xem thực đơn <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="intro-photo" aria-hidden="true">
+        <div class="intro-photo-fallback"><span>Bữa ăn hằng ngày</span><small>Cơm · Bún · Phở · Bánh mì</small></div>
+        <img src="images/AnhLogo.png" alt="Anhlogo">rer" onerror="this.closest('.intro').classList.add('hero-no-photo');this.remove()">
+      </div>
+    </section>
+
+    <section class="order-layout" id="thuc-don">
+      <div class="menu-panel">
+        <div class="section-title">
+          <div>
+            <p class="overline">ĐẶT ĐỒ ĂN</p>
+            <h2>Thực đơn</h2>
+            <p>Giá và món ăn dùng để mô phỏng chương trình.</p>
+          </div>
+          <span id="menuCount" class="count-label">Đang tải...</span>
+        </div>
+        <div class="menu-tools">
+          <label class="search-box" for="searchInput">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"/><path d="m16 16 5 5"/></svg>
+            <input id="searchInput" type="search" placeholder="Tìm cơm, bún, bánh mì..." autocomplete="off">
+          </label>
+          <div class="category-buttons" id="categoryButtons" aria-label="Lọc loại món"></div>
+        </div>
+        <div id="foodGrid" class="food-grid" aria-live="polite"><p class="loading">Đang tải thực đơn...</p></div>
+      </div>
+
+      <aside class="cart-panel" id="cartPanel" aria-label="Giỏ hàng">
+        <div class="cart-head"><div><h2>Giỏ hàng <span id="cartCount" class="cart-number">0</span></h2><p>Kiểm tra món trước khi đặt</p></div><button id="closeCart" class="cart-close" type="button" aria-label="Đóng giỏ hàng">✕</button></div>
+        <div class="student-summary">
+          <div class="student-badge" aria-hidden="true">SV</div>
+          <div class="student-info"><strong id="studentName">Sinh viên</strong><span id="studentRoom">Phòng KTX</span></div>
+          <div class="wallet-info"><small>Số dư ví</small><strong id="balance">0 ₫</strong><button id="topupBtn" type="button" class="topup-inline">+ Nạp ví</button></div>
+        </div>
+        <div id="cartItems" class="cart-items" aria-live="polite"></div>
+        <div class="cart-bottom">
+          <div class="total-row"><span>Tạm tính</span><strong id="cartTotal">0 ₫</strong></div>
+          <p class="payment-heading">Thanh toán bằng</p>
+          <div class="payment-list">
+            <label class="payment-row"><input type="radio" name="payment" value="wallet" checked><span><strong>Ví sinh viên</strong><small>Trừ tiền từ số dư mẫu</small></span></label>
+            <label class="payment-row"><input type="radio" name="payment" value="cash"><span><strong>Tiền mặt</strong><small>Chờ thanh toán khi nhận</small></span></label>
+            <label class="payment-row"><input type="radio" name="payment" value="bank"><span><strong>Chuyển khoản</strong><small>Mô phỏng, chưa chuyển tiền thật</small></span></label>
+          </div>
+          <button id="checkoutBtn" class="order-button" type="button" disabled>Đặt hàng <span aria-hidden="true">→</span></button>
+          <p class="payment-footnote"> Hệ Thống Đặt Đồ Ăn Cho Sinh Viên KTX </p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="instructions" id="huong-dan" aria-labelledby="instruction-title">
+      <div><p class="overline">HƯỚNG DẪN</p><h2 id="instruction-title">Cách đặt món</h2></div>
+      <ol>
+        <li><span>01</span><p><strong>Chọn món</strong><small>Thêm các món còn hàng vào giỏ.</small></p></li>
+        <li><span>02</span><p><strong>Kiểm tra giỏ</strong><small>Thay đổi số lượng hoặc xóa món.</small></p></li>
+        <li><span>03</span><p><strong>Xác nhận đơn</strong><small>Chọn cách thanh toán và đặt hàng.</small></p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><strong>Căn tin KTX</strong><span>Nhóm 3 - Hệ Thống Đặt Đồ Ăn Cho Sinh Viên KTX</span></div></footer>
+
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal" class="modal-backdrop" hidden role="presentation">
+    <section class="modal" role="dialog" aria-modal="true" aria-label="Thông tin đơn hàng">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Đóng">✕</button>
+      <div id="modalBody"></div>
+    </section>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
